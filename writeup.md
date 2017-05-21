@@ -1,9 +1,4 @@
-##Writeup Template
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Vehicle Detection Project**
+## Vehicle Detection Project
 
 The goals / steps of this project are the following:
 
@@ -15,14 +10,21 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./examples/car_not_car.png
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
+[image1]: ./output_images/dataset_output.jpg
+[image2a]: ./output_images/hog1_output.jpg
+[image2b]: ./output_images/hog2_output.jpg
+[image2c]: ./output_images/hog3_output.jpg
+[image2d]: ./output_images/spatial_bin_output.jpg
+[image2e]: ./output_images/histogram_output.jpg
+[image3]: ./output_images/window_search_output.jpg
+[image4a]: ./output_images/test1_output.jpg
+[image4b]: ./output_images/test2_output.jpg
+[image4c]: ./output_images/test3_output.jpg
+[image4d]: ./output_images/test4_output.jpg
+[image4e]: ./output_images/test5_output.jpg
+[image4f]: ./output_images/test6_output.jpg
+[image5]: ./output_images/heatmap_output.jpg
+[video1]: ./project_video_output.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -49,7 +51,11 @@ I then explored different color spaces and different `skimage.hog()` parameters 
 Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
 
-![alt text][image2]
+![alt text][image2a]
+![alt text][image2b]
+![alt text][image2c]
+![alt text][image2d]
+![alt text][image2e]
 
 ####2. Explain how you settled on your final choice of HOG parameters.
 
@@ -71,7 +77,12 @@ I decided to search random window positions at random scales all over the image 
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
-![alt text][image4]
+![alt text][image4a]
+![alt text][image4b]
+![alt text][image4c]
+![alt text][image4d]
+![alt text][image4e]
+![alt text][image4f]
 ---
 
 ### Video Implementation
@@ -98,7 +109,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 
 
----
+--- 
 
 ###Discussion
 
