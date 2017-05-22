@@ -97,4 +97,6 @@ ENV/
 .ropeproject
 
 # Training Data
-training_data/*
+training_data/vehicles
+training_data/non-vehicles
+
